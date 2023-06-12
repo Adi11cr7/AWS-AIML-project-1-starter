@@ -27,7 +27,7 @@ The `WeightedEnsemble_L3` model, also known as the `(add features) model`, achie
 -Furthermore, data visualization techniques were employed to gain insights from the features.
 
 ### How much better did your model perform after adding additional features and why do you think that is?
--The incorporation of additional features resulted in an approximately 138% improvement in model performance compared to the initial/raw model that did not undergo exploratory data analysis (EDA) or feature engineering.
+-The incorporation of additional features resulted in an approximately *74%* improvement in model performance compared to the initial/raw model that did not undergo exploratory data analysis (EDA) or feature engineering.
 -The model performance was enhanced by converting certain categorical variables, initially represented as integer data types, into their true categorical data types.
 -Apart from excluding the casual and registered features during model training, the atemp feature was also dropped from the datasets due to its high correlation with another independent variable, temp. This step helped reduce multicollinearity.
 -Furthermore, splitting the datetime feature into multiple independent features, such as year, month, day, and hour, and introducing the day_type feature contributed to further improving the model performance. These predictor variables facilitated the model in effectively capturing seasonality and historical patterns in the data.
@@ -37,7 +37,7 @@ The `WeightedEnsemble_L3` model, also known as the `(add features) model`, achie
 
 ## Hyperparameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-The process of tuning hyperparameters proved advantageous as it improved the model's performance compared to the initial submission. Three distinct configurations were utilized during the hyperparameter optimization experiments. While the hyperparameter-tuned models demonstrated competitive performance compared to the model that underwent exploratory data analysis (EDA) and feature addition, the latter exhibited exceptional performance on the Kaggle (test) dataset.
+The process of tuning hyperparameters proved advantageous as it improved the model's performance by *71%* compared to the initial submission. Three distinct configurations were utilized during the hyperparameter optimization experiments. While the hyperparameter-tuned models demonstrated competitive performance compared to the model that underwent exploratory data analysis (EDA) and feature addition, the latter exhibited exceptional performance on the Kaggle (test) dataset.
 
 **Observations:**
 - The autogluon package was utilized for training, considering the prescribed settings. However, the performance of hyperparameter optimized models was found to be sub-optimal. This is because the hyperparameters are tuned using a fixed set of values provided by the user, which restricts the exploration options for autogluon.
